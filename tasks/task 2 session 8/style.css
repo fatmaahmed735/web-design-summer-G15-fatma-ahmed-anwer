@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+.road {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+.car {
+    width: 250px;
+    position: absolute;
+    bottom: 150px;
+
+    left: -300px;
+
+    animation: carMove 5s linear infinite;
+}
+
+@keyframes carMove {
+    0% {
+        left: -300px;
+    }
+
+    100% {
+        left: 110%;
+    }
+}
+
+
