@@ -1,0 +1,681 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    color: #222;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+button {
+    border: none;
+    background: #246b70;
+    color: white;
+
+    padding: 9px 25px;
+
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    width: 850px;
+    max-width: 90%;
+
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.logo img {
+
+    width: 45px;
+
+    height: auto;
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.navbar nav a {
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 10px;
+}
+
+
+.menu {
+
+    display: none;
+}
+
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    width: 850px;
+    max-width: 90%;
+
+    margin: 35px auto;
+
+    text-align: center;
+}
+
+
+.hero h1 {
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero > p {
+
+    font-size: 9px;
+
+    color: #777;
+
+    margin-bottom: 15px;
+}
+
+
+.hero-images {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 30px;
+}
+
+
+.hero-images img {
+
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+
+/* =========================
+   WELLBEING
+========================= */
+
+.wellbeing {
+
+    width: 850px;
+    max-width: 90%;
+
+    margin: 25px auto;
+
+    padding: 30px;
+
+    background: #f4f4f4;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.wellbeing-content {
+
+    width: 70%;
+}
+
+
+.wellbeing h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+
+.features {
+
+    display: flex;
+
+    gap: 40px;
+}
+
+
+.feature {
+
+    width: 160px;
+}
+
+
+.feature span {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 23px;
+    height: 23px;
+
+    background: #246b70;
+
+    color: white;
+
+    border-radius: 4px;
+
+    margin-bottom: 7px;
+}
+
+
+.feature p {
+
+    font-size: 9px;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+.woman {
+
+    width: 120px;
+
+    height: 110px;
+
+    object-fit: contain;
+}
+
+
+
+/* =========================
+   ORGANIC
+========================= */
+
+.organic {
+
+    width: 850px;
+    max-width: 90%;
+
+    margin: 30px auto;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    gap: 30px;
+
+    align-items: center;
+}
+
+
+.organic > img {
+
+    height: 200px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+.organic-content h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.organic-content > p {
+
+    font-size: 9px;
+
+    color: #666;
+
+    line-height: 1.6;
+}
+
+
+.list {
+
+    margin-top: 12px;
+}
+
+
+.list div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+}
+
+
+.list span {
+
+    width: 20px;
+
+    height: 20px;
+
+    border: 1px solid #246b70;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 10px;
+}
+
+
+.list p {
+
+    font-size: 9px;
+}
+
+
+
+/* =========================
+   FINAL IMAGE
+========================= */
+
+.final-section {
+
+    width: 850px;
+
+    max-width: 90%;
+
+    margin: 30px auto 0;
+}
+
+
+.final-image {
+
+    position: relative;
+}
+
+
+.final-image > img {
+
+    height: 220px;
+
+    object-fit: cover;
+
+    border-radius: 5px;
+}
+
+
+.overlay {
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: white;
+
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+.overlay h2 {
+
+    font-size: 20px;
+
+    margin-bottom: 8px;
+}
+
+
+.overlay p {
+
+    font-size: 9px;
+
+    margin-bottom: 12px;
+}
+
+
+
+/* =========================
+   PRACTICES
+========================= */
+
+.practices {
+
+    background: #ffe0d5;
+
+    padding: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    border-radius: 5px;
+}
+
+
+.practices div {
+
+    text-align: center;
+}
+
+
+.practices span {
+
+    display: block;
+
+    font-size: 18px;
+
+    margin-bottom: 5px;
+}
+
+
+.practices p {
+
+    font-size: 9px;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    margin-top: 20px;
+
+    padding: 25px 40px;
+
+    background: #246b70;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+.footer-logo img {
+
+    width: 45px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    gap: 20px;
+}
+
+
+.footer-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 9px;
+}
+
+
+.social {
+
+    font-size: 9px;
+}
+
+
+
+/* =========================
+   IPAD
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar,
+    .hero,
+    .wellbeing,
+    .organic,
+    .final-section {
+
+        width: 80%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 26px;
+    }
+
+}
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .navbar,
+    .hero,
+    .wellbeing,
+    .organic,
+    .final-section {
+
+        width: 88%;
+    }
+
+
+
+    /* NAVBAR */
+
+    .navbar nav {
+
+        display: none;
+    }
+
+
+    .menu {
+
+        display: block;
+
+        font-size: 22px;
+    }
+
+
+
+    /* HERO */
+
+    .hero {
+
+        margin-top: 25px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 23px;
+
+        line-height: 1.2;
+    }
+
+
+    .hero-images {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .hero-images img {
+
+        height: 180px;
+    }
+
+
+
+    /* WELLBEING */
+
+    .wellbeing {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 25px 15px;
+    }
+
+
+    .wellbeing-content {
+
+        width: 100%;
+    }
+
+
+    .features {
+
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+    .feature {
+
+        width: 130px;
+    }
+
+
+    .woman {
+
+        margin-top: 20px;
+    }
+
+
+
+    /* ORGANIC */
+
+    .organic {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .organic > img {
+
+        height: 230px;
+    }
+
+
+
+    /* FINAL */
+
+    .final-image > img {
+
+        height: 300px;
+    }
+
+
+    .overlay h2 {
+
+        font-size: 18px;
+
+        padding: 0 20px;
+    }
+
+
+    .practices {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+        text-align: center;
+    }
+
+}
+
+
+
