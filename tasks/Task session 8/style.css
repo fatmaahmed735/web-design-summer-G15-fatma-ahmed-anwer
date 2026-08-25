@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 700px;
+    height: 500px;
+    margin: 80px auto;
+    position: relative;
+}
+
+
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    position: absolute;
+
+    transition: 0.4s;
+}
+
+
+
+.card1 {
+    left: 0;
+    top: 0;
+
+    animation: cardOne 4s infinite;
+}
+
+
+
+.arrow {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 35px;
+    height: 35px;
+
+    background-color: #6c4ccf;
+
+    color: white;
+
+    text-align: center;
+    line-height: 35px;
+
+    border-radius: 0 0 0 30px;
+}
+
+
+.card2 {
+    left: 200px;
+    top: 270px;
+
+    animation: cardTwo 4s infinite;
+}
+
+
+.side {
+    position: absolute;
+
+    right: -1px;
+    top: 25px;
+
+    width: 18px;
+    height: 80px;
+
+    background-color: #e85d9e;
+
+    transform: skewY(-25deg);
+
+    animation: sideColor 4s infinite;
+}
+
+
+.side span {
+    position: absolute;
+
+    top: 25px;
+    right: 2px;
+
+    color: white;
+
+    font-size: 18px;
+
+    transform: skewY(25deg);
+}
+
+
+.card h2 {
+    color: #4b3b8f;
+    margin-top: 5px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.5;
+}
+
+
+button {
+    background-color: #6c4ccf;
+
+    color: white;
+
+    border: none;
+
+    padding: 8px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.card2 button {
+    background-color: #e85d9e;
+    
+}
+
+
+@keyframes cardOne {
+
+    0% {
+        transform: translateY(0);
+        background-color: white;
+    }
+
+    20% {
+        transform: translateY(-10px);
+        background-color: #6c4ccf;
+    }
+
+    40% {
+        transform: translateY(0);
+        background-color: white;
+    }
+
+    100% {
+        transform: translateY(0);
+        background-color: white;
+    }
+}
+
+
+.card1 h2,
+.card1 p {
+    animation: textOne 4s infinite;
+}
+
+@keyframes textOne {
+
+    0% {
+        color: #4b3b8f;
+    }
+
+    20% {
+        color: white;
+    }
+
+    40% {
+        color: #4b3b8f;
+    }
+
+    100% {
+        color: #4b3b8f;
+    }
+}
+
+
+@keyframes cardTwo {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+
+    80% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes sideColor {
+
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
