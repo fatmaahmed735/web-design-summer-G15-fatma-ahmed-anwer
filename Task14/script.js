@@ -12,17 +12,6 @@ let users = [
 localStorage.setItem("users", JSON.stringify(users));
 
 
-
-
-
-
-
-
-
-
-
-
-
 let usersList = JSON.parse(localStorage.getItem("users"));
 
 let container = document.getElementById("users");
